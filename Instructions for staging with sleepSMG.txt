@@ -1,0 +1,21 @@
+Directions for using sleepSMG to stage Analyzer-exported EDF+ data:
+
+1) Open MATLAB (tested to work with 2016a), run EEGLAB (tested to run with 13.6.5b). Once it opens, close the EEGLAB window.
+
+2) Change MATLAB working directory to experiment data directory.
+
+3) Run sleepSMG.
+
+4) Select EEG data file. Choose 'CognacHD_Montage' from drop down menu. Ignore red text at command window. If this is your first time staging this dataset leave 'Stage filename' blank, otherwise click 'Browse' to load the previous staging.mat file. Leave 'Notes' blank.
+
+5) Click 'Load', wait. Some orange and red text will appear in the command window, then 'Reading data in EDF format...'- you will know loading is complete when a small box with 'Record', 'Lights off', 'Lights on', and 'Window size' appears in the sleepSMG window.
+
+6) While PSG data are loading in MATLAB, open the .edf in EDFbrowser. Use the starting time listing in EDFbrowser as the "Record" and "Lights off" times in sleepSMG. Fast forward to file end in EDFbrowser, use the last listed time as the "Lights on" time in sleepSMG. Set window size to 30, click 'Start'.
+
+7) DO NOT GO BACK AN EPOCH FROM THE FIRST EPOCH.
+ 
+8) Use the buttons on the screen to score the PSG data as described at http://sleepsmg.sourceforge.net/programInfo.html.
+
+9) Close sleepSMG window when you are done (no need to save, it saves each time you change epochs).
+
+10) If you did not load a staging file (i.e. if you created a new staging file), when you close sleepSMG rename the matlab.mat file in the current folder to "PID_stagedata.mat", and move it to an appropriate folder.

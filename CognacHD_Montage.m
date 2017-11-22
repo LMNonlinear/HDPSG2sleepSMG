@@ -1,8 +1,8 @@
-function Cognac_Montage(handles, range)
+function CognacHD_Montage(handles, range)
 % Stephanie Greer and Jared Saletin
 % Walker Lab, UC Berekeley 11/22/2010
 
-% Adapted by Ahren Fitzroy (Spencer Lab, UMass Amherst, 2016)
+% Adapted by Ahren Fitzroy (Spencer Lab, UMass Amherst, 2017)
 
 EEG = handles.EEG;
 scaleSpace = handles.curScale;
@@ -10,7 +10,7 @@ hideCh = handles.hideChans;
 h = handles.axes1;
 scaleCh = handles.scaleChans;
 
-electrodes = {'EOG1'; 'EOG2'; 'F3'; 'F4'; 'C3'; 'C4'; 'O1'; 'O2'; 'EMG1'};
+electrodes = {'EOG1'; 'EOG2'; 'F3'; 'F4'; 'C3'; 'C4'; 'O1'; 'O2'; 'ECG'};
 colors = 'bbkkkkkkr';
 
 electrodes = flipud(electrodes);
